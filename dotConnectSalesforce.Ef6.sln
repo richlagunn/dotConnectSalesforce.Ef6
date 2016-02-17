@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotConnectSalesforce.App", "dotConnectSalesforce.App\dotConnectSalesforce.App.csproj", "{C6C53FAB-6BF3-4357-BF02-82BCBC2FB9D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotConnectSalesforce.Edml", "dotConnectSalesforce.Edml\dotConnectSalesforce.Edml.csproj", "{79D79775-8232-46CB-B01A-2633AF57F196}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotConnectSalesforce.Data", "dotConnectSalesforce.Data\dotConnectSalesforce.Data.csproj", "{C1A67B47-5710-407C-A13E-6A0380043F83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotConnectSalesforce.DbContext", "dotConnectSalesforce.DbContext\dotConnectSalesforce.DbContext.csproj", "{B22548DC-DEF2-481C-899E-657D5550FDA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6C53FAB-6BF3-4357-BF02-82BCBC2FB9D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6C53FAB-6BF3-4357-BF02-82BCBC2FB9D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6C53FAB-6BF3-4357-BF02-82BCBC2FB9D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6C53FAB-6BF3-4357-BF02-82BCBC2FB9D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D79775-8232-46CB-B01A-2633AF57F196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D79775-8232-46CB-B01A-2633AF57F196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D79775-8232-46CB-B01A-2633AF57F196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D79775-8232-46CB-B01A-2633AF57F196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1A67B47-5710-407C-A13E-6A0380043F83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1A67B47-5710-407C-A13E-6A0380043F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1A67B47-5710-407C-A13E-6A0380043F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1A67B47-5710-407C-A13E-6A0380043F83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B22548DC-DEF2-481C-899E-657D5550FDA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B22548DC-DEF2-481C-899E-657D5550FDA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B22548DC-DEF2-481C-899E-657D5550FDA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B22548DC-DEF2-481C-899E-657D5550FDA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

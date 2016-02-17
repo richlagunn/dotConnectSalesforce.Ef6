@@ -1,0 +1,161 @@
+﻿<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="dotConnectSalesforce.Edml.Entities.Store" Alias="Self" Provider="Devart.Data.Salesforce" ProviderManifestToken="Salesforce" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:devart="http://devart.com/schemas/edml/StorageSchemaExtensions/1.0" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="SalesforceEdmlContextStoreContainer">
+          <EntitySet Name="Addresses" EntityType="dotConnectSalesforce.Edml.Entities.Store.Address" store:Type="Tables" Table="Address" />
+        </EntityContainer>
+        <EntityType Name="Address">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="string" Nullable="false" MaxLength="18" StoreGeneratedPattern="Computed" />
+          <Property Name="OwnerId" Type="string" Nullable="false" MaxLength="18" />
+          <Property Name="IsDeleted" Type="boolean" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="Name" Type="string" Nullable="false" MaxLength="80" StoreGeneratedPattern="Computed" />
+          <Property Name="LastViewedDate" Type="datetime" StoreGeneratedPattern="Computed" />
+          <Property Name="LastReferencedDate" Type="datetime" StoreGeneratedPattern="Computed" />
+          <Property Name="Name_of_Hotel_Motel_Complex" Type="string" MaxLength="255" />
+          <Property Name="Street" Type="string" Nullable="false" MaxLength="100" />
+          <Property Name="Street_Address_2" Type="string" MaxLength="100" />
+          <Property Name="City" Type="string" Nullable="false" MaxLength="40" />
+          <Property Name="State" Type="string" MaxLength="255" />
+          <Property Name="Postal_Zip_Code" Type="string" MaxLength="10" />
+          <Property Name="Profile" Type="string" MaxLength="18" />
+          <Property Name="Status" Type="string" MaxLength="255" />
+          <Property Name="Type" Type="string" MaxLength="255" />
+          <Property Name="Update_Account" Type="boolean" Nullable="false" />
+          <Property Name="Housing_Concern" Type="boolean" Nullable="false" />
+          <Property Name="Account" Type="string" MaxLength="18" />
+          <Property Name="Legacy_Address_ID" Type="string" MaxLength="15" />
+          <Property Name="Phone" Type="string" MaxLength="40" />
+          <Property Name="Fax" Type="string" MaxLength="40" />
+          <Property Name="Email" Type="string" MaxLength="80" />
+          <Property Name="Website" Type="string" MaxLength="255" />
+          <Property Name="Migrated_Record" Type="boolean" Nullable="false" />
+          <Property Name="Atlas_High_School_ID" Type="boolean" Nullable="false" />
+          <Property Name="Contact" Type="string" MaxLength="18" />
+          <Property Name="Housing_Concern_Notes" Type="string" MaxLength="32768" />
+          <Property Name="State_Text" Type="string" MaxLength="40" />
+          <Property Name="Number_of_bedrooms" Type="double" />
+          <Property Name="Number_of_bathrooms" Type="double" />
+          <Property Name="Is_there_a_separate_kitchen" Type="string" MaxLength="255" />
+          <Property Name="Number_of_Associations" Type="double" StoreGeneratedPattern="Computed" />
+          <Property Name="Type_Image" Type="string" MaxLength="1300" StoreGeneratedPattern="Computed" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dotConnectSalesforce.Edml.Entities" Alias="Self" d4p1:ViewGeneration="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:devart="http://devart.com/schemas/edml/ConceptualSchemaExtensions/1.0" xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" annotation:UseStrongSpatialTypes="false" xmlns:d4p1="http://devart.com/schemas/edml/ConceptualSchemaExtensions/1.0" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="SalesforceEdmlContext" annotation:LazyLoadingEnabled="true" ed:Guid="fa502d62-4f10-4eee-87a3-a7a02afb4542">
+          <EntitySet Name="Addresses" EntityType="dotConnectSalesforce.Edml.Entities.Address" />
+        </EntityContainer>
+        <EntityType Name="Address" ed:Guid="3bf639a0-7fd1-45ce-a4bd-24339978d03a">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="18" Unicode="true" annotation:StoreGeneratedPattern="Computed" ed:ValidateMaxLength="18" ed:ValidateRequired="true" ed:Guid="d880e3ef-c81e-43f4-8c0c-3928a9687886" />
+          <Property Name="OwnerId" Type="String" Nullable="false" MaxLength="18" Unicode="true" ed:ValidateMaxLength="18" ed:ValidateRequired="true" ed:Guid="c7a2c7ee-dd76-4aea-9d66-8cda63cd7b25" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" annotation:StoreGeneratedPattern="Computed" ed:ValidateRequired="true" ed:Guid="8f2b8ec9-9cde-4872-8277-bbf2f9b6814e" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="80" Unicode="true" annotation:StoreGeneratedPattern="Computed" ed:ValidateMaxLength="80" ed:ValidateRequired="true" ed:Guid="eb1ee835-9cc6-4901-8c10-d129d363a046" />
+          <Property Name="LastViewedDate" Type="DateTime" annotation:StoreGeneratedPattern="Computed" ed:ValidateRequired="false" ed:Guid="58f07268-4449-43aa-bdfa-5f8099998ab1" />
+          <Property Name="LastReferencedDate" Type="DateTime" annotation:StoreGeneratedPattern="Computed" ed:ValidateRequired="false" ed:Guid="889fcd78-9b4a-4c71-9626-248eb80c798a" />
+          <Property Name="NameOfHotelMotelComplex" Type="String" MaxLength="255" Unicode="true" ed:ValidateMaxLength="255" ed:ValidateRequired="false" ed:Guid="d01d9264-2546-4bd8-adc0-4ffc218d35ec" />
+          <Property Name="Street" Type="String" Nullable="false" MaxLength="100" Unicode="true" ed:ValidateMaxLength="100" ed:ValidateRequired="true" ed:Guid="1aaf288f-eb7e-4f72-be83-9810e9aea4f4" />
+          <Property Name="StreetAddress2" Type="String" MaxLength="100" Unicode="true" ed:ValidateMaxLength="100" ed:ValidateRequired="false" ed:Guid="c20fe680-9f05-47e9-a89c-ad7e3ea5cebd" />
+          <Property Name="City" Type="String" Nullable="false" MaxLength="40" Unicode="true" ed:ValidateMaxLength="40" ed:ValidateRequired="true" ed:Guid="7095ec61-69ea-4eb0-9465-859e58566f9c" />
+          <Property Name="State" Type="String" MaxLength="255" Unicode="true" ed:ValidateMaxLength="255" ed:ValidateRequired="false" ed:Guid="09cefa02-6b96-422c-8905-e92e4752875e" />
+          <Property Name="PostalZipCode" Type="String" MaxLength="10" Unicode="true" ed:ValidateMaxLength="10" ed:ValidateRequired="false" ed:Guid="3c8fdf9c-bf61-4fd4-bd1a-42b1e2bf3ce5" />
+          <Property Name="Profile" Type="String" MaxLength="18" Unicode="true" ed:ValidateMaxLength="18" ed:ValidateRequired="false" ed:Guid="22cbf973-ba21-488a-8eab-46488b288168" />
+          <Property Name="Status" Type="String" MaxLength="255" Unicode="true" ed:ValidateMaxLength="255" ed:ValidateRequired="false" ed:Guid="c5d8c13f-6b30-4a02-96da-468c7ec38594" />
+          <Property Name="Type" Type="String" MaxLength="255" Unicode="true" ed:ValidateMaxLength="255" ed:ValidateRequired="false" ed:Guid="292ebe6f-9c0d-44c2-8c8a-c05c430a6fb2" />
+          <Property Name="UpdateAccount" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="0627e6af-c740-4ae8-8025-544ee6fe3ec7" />
+          <Property Name="HousingConcern" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="2471c2e4-ea4f-4a51-bc66-ce762d55e2a6" />
+          <Property Name="Account" Type="String" MaxLength="18" Unicode="true" ed:ValidateMaxLength="18" ed:ValidateRequired="false" ed:Guid="bb30bb61-a07e-4a4f-a7c6-e84a31117185" />
+          <Property Name="LegacyAddressID" Type="String" MaxLength="15" Unicode="true" ed:ValidateMaxLength="15" ed:ValidateRequired="false" ed:Guid="5f6af31a-2d42-44f1-8af6-313f770d4514" />
+          <Property Name="Phone" Type="String" MaxLength="40" Unicode="true" ed:ValidateMaxLength="40" ed:ValidateRequired="false" ed:Guid="dd37826a-657d-40ed-9a95-2b421f43f083" />
+          <Property Name="Fax" Type="String" MaxLength="40" Unicode="true" ed:ValidateMaxLength="40" ed:ValidateRequired="false" ed:Guid="765a511c-3c67-4325-91c6-9f46f84804bc" />
+          <Property Name="Email" Type="String" MaxLength="80" Unicode="true" ed:ValidateMaxLength="80" ed:ValidateRequired="false" ed:Guid="1f995ba9-d402-48b1-b8c5-a44be3165921" />
+          <Property Name="Website" Type="String" MaxLength="255" Unicode="true" ed:ValidateMaxLength="255" ed:ValidateRequired="false" ed:Guid="6ee6d6ad-a1aa-4f4f-80de-5a454a55d8d9" />
+          <Property Name="MigratedRecord" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="fdd68701-5a91-4a89-a2aa-18c4e52312c0" />
+          <Property Name="AtlasHighSchoolID" Type="Boolean" Nullable="false" ed:ValidateRequired="true" ed:Guid="8c139e07-d967-4b5c-becc-c69ba461cfb1" />
+          <Property Name="Contact" Type="String" MaxLength="18" Unicode="true" ed:ValidateMaxLength="18" ed:ValidateRequired="false" ed:Guid="62f3b74f-296d-4836-aa8c-f607a1eeb67e" />
+          <Property Name="HousingConcernNotes" Type="String" MaxLength="32768" Unicode="true" ed:ValidateMaxLength="32768" ed:ValidateRequired="false" ed:Guid="3475f4f0-2eca-4f4f-83e5-c87751256dad" />
+          <Property Name="StateText" Type="String" MaxLength="40" Unicode="true" ed:ValidateMaxLength="40" ed:ValidateRequired="false" ed:Guid="a4c9c77e-60fe-4b9c-86f3-2f86cd5a9d48" />
+          <Property Name="NumberOfBedrooms" Type="Double" ed:ValidateRequired="false" ed:Guid="13d96b91-b38f-4e51-9134-15a37453416e" />
+          <Property Name="NumberOfBathrooms" Type="Double" ed:ValidateRequired="false" ed:Guid="f5e90706-47f2-4bd5-8754-fa468f4ca2f5" />
+          <Property Name="IsThereASeparateKitchen" Type="String" MaxLength="255" Unicode="true" ed:ValidateMaxLength="255" ed:ValidateRequired="false" ed:Guid="02f8da0e-d598-47bb-8283-ba5027400226" />
+          <Property Name="NumberOfAssociations" Type="Double" annotation:StoreGeneratedPattern="Computed" ed:ValidateRequired="false" ed:Guid="67226c06-d3d0-42e9-99cf-991257e4cc3e" />
+          <Property Name="TypeImage" Type="String" MaxLength="1300" Unicode="true" annotation:StoreGeneratedPattern="Computed" ed:ValidateMaxLength="1300" ed:ValidateRequired="false" ed:Guid="46f2f95c-850c-475f-8977-d904ed3f73db" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- MSL content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SalesforceEdmlContextStoreContainer" CdmEntityContainer="SalesforceEdmlContext">
+          <EntitySetMapping Name="Addresses">
+            <EntityTypeMapping TypeName="dotConnectSalesforce.Edml.Entities.Address">
+              <MappingFragment StoreEntitySet="Addresses">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="OwnerId" ColumnName="OwnerId" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="LastViewedDate" ColumnName="LastViewedDate" />
+                <ScalarProperty Name="LastReferencedDate" ColumnName="LastReferencedDate" />
+                <ScalarProperty Name="NameOfHotelMotelComplex" ColumnName="Name_of_Hotel_Motel_Complex" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="StreetAddress2" ColumnName="Street_Address_2" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="PostalZipCode" ColumnName="Postal_Zip_Code" />
+                <ScalarProperty Name="Profile" ColumnName="Profile" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="UpdateAccount" ColumnName="Update_Account" />
+                <ScalarProperty Name="HousingConcern" ColumnName="Housing_Concern" />
+                <ScalarProperty Name="Account" ColumnName="Account" />
+                <ScalarProperty Name="LegacyAddressID" ColumnName="Legacy_Address_ID" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="MigratedRecord" ColumnName="Migrated_Record" />
+                <ScalarProperty Name="AtlasHighSchoolID" ColumnName="Atlas_High_School_ID" />
+                <ScalarProperty Name="Contact" ColumnName="Contact" />
+                <ScalarProperty Name="HousingConcernNotes" ColumnName="Housing_Concern_Notes" />
+                <ScalarProperty Name="StateText" ColumnName="State_Text" />
+                <ScalarProperty Name="NumberOfBedrooms" ColumnName="Number_of_bedrooms" />
+                <ScalarProperty Name="NumberOfBathrooms" ColumnName="Number_of_bathrooms" />
+                <ScalarProperty Name="IsThereASeparateKitchen" ColumnName="Is_there_a_separate_kitchen" />
+                <ScalarProperty Name="NumberOfAssociations" ColumnName="Number_of_Associations" />
+                <ScalarProperty Name="TypeImage" ColumnName="Type_Image" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <edmx:Diagrams>
+      <Diagram Name="Main" />
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
